@@ -1,0 +1,10 @@
+all_sprites=pygame.sprite.Group()
+rocks=pygame.sprite.Group()
+bullets=pygame.sprite.Group()
+player=Player()
+all_sprites.add(player)
+for i in range(8):
+    r=Rock()
+    all_sprites.add(r)
+    rocks.add(r)
+score = 0
